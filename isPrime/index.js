@@ -1,7 +1,6 @@
 const isPrime = num => {
   // do code here
-  for (let i = 2; i < num; i++) if (num % i === 0) return `${num} IS NOT A PRIME`
-  return `${num} IS A PRIME`
+
 }
 
 // do not change this code below

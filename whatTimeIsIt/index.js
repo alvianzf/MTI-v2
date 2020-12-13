@@ -1,23 +1,6 @@
 const whatTimeIsIt = time => {
   // do code here
-  if (time === "12:00 am") return "It's midnight"
-  if (time === "12:00 pm") return "It's noon"
 
-  let string1 = ["", "one", "two", 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
-    'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
-  let string2 = ["twenty", 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
-
-  let hours = time.split(" ")[0].split(":")[0]
-  let minutes = time.split(" ")[0].split(":")[1]
-  let option = time.split(" ")[1]
-
-  if (option === 'pm') {
-    if (minutes > 19) return `It's ${string1[hours]} past ${string2[minutes.split("")[0] - 2]} ${string1[minutes.split("")[1]]} in the afternoon`
-    else return `It's ${string1[hours]} past ${string1[minutes]} in the afternoon`
-  } else {
-    if (minutes > 19) return `It's ${string1[hours]} past ${string2[minutes.split("")[0] - 2]} ${string1[minutes.split("")[1]]} in the morning`
-    else return `It's ${string1[hours]} past ${string1[minutes]} in the morning`
-  }
 }
 
 

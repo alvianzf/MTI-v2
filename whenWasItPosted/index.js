@@ -1,12 +1,6 @@
 const whenWasItPosted = date => {
   // do code here
-  let timestamp = new Date().getTime() - new Date(date).getTime()
-  let difference = Math.floor(timestamp / 1000 / 60 / 60 / 24)
 
-  if (difference < 7) return `${difference} day ago`
-  if (difference < 30) return `${Math.floor(difference / 7)} week ago`
-  if (difference < 365) return `${Math.floor(difference / 30)} month ago`
-  return `${Math.floor(difference / 365)} year ago`
 }
 
 

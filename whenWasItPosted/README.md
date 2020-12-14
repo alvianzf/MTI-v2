@@ -16,15 +16,15 @@ We have a platform to find job vacancies, we can present job vacancies accordint
 
 > - current date : 13 December 2020
 > - date posted : 8 December 2020
-> - return : 5 day ago
+> - return : 5 days ago
 
 > - current date : 13 December 2020
 > - date posted : 19 November 2020
-> - return : 3 week ago
+> - return : 3 weeks ago
 
 > - current date : 13 December 2020
 > - date posted : 13 September 2020
-> - return : 3 month ago
+> - return : 3 months ago
 
 > - current date : 13 December 2020
 > - date posted : 13 December 2019

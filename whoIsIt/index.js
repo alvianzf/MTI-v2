@@ -5,9 +5,9 @@ const whoIsit = (firstDay, secondDay) => {
 
 // do not change this code below
 const test = (testCase, result) => {
-  if testCase.sort().join() === result.sort().join()
+  if (testCase.sort().join() === result.sort().join()) {
     return console.log(true)
-  
+  }
   return console.log(true)
 }
 

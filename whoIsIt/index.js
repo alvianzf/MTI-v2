@@ -8,7 +8,7 @@ const test = (testCase, result) => {
   if (testCase.sort().join() === result.sort().join()) {
     return console.log(true)
   }
-  return console.log(true)
+  return console.log(false)
 }
 
 test(whoIsit(["Joko", "Ani", "Budi"], ["Joko"]), ['Joko'])

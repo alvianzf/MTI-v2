@@ -1,6 +1,15 @@
 const whenWasItPosted = require('./../../whenWasItPosted')
 
 test('whenWasItPosted?', () => {
+    // do not change this code below
+    const changeToString = __ => {
+        const _ = new Date(__)
+        const month = _.toLocaleString('default', { month: 'long' });
+        const date = _.getDate()
+        const year = _.getFullYear()
+        return `${date} ${month} ${year}`
+      }
+      
     const date = new Date();
     const date1 = new Date();
     const date2 = new Date();
@@ -13,12 +22,4 @@ test('whenWasItPosted?', () => {
     expect(whenWasItPosted(changeToString(date4.setFullYear(date.getFullYear() - 20)))).toBe('20 years ago');
 })
 
-// do not change this code below
-const changeToString = __ => {
-    const _ = new Date(__)
-    const month = _.toLocaleString('default', { month: 'long' });
-    const date = _.getDate()
-    const year = _.getFullYear()
-    return `${date} ${month} ${year}`
-  }
 

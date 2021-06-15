@@ -12,4 +12,5 @@ Run command
 
 ## Notes
 
-You have **4** problems to complete: `isItPrime`, `whatTimeIsIt`, `whenWasItPosted`, and `whoIsIt`. Each problem set has its own instructions. Read them carefuly!.
+You have **4** problems to complete: `isItPrime`, `whatTimeIsIt`, `whenWasItPosted`, and `whoIsIt`. Each problem set has its own instructions. Read them carefuly!.  
+Do not alter the contents of `.github` folder!

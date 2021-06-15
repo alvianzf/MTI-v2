@@ -1,4 +1,4 @@
-function isPrime = num => {
+function isPrime(num) {
   // do code here
 
 }

@@ -1,8 +1,4 @@
-const isPrime = require('./isPrime');
-
-// test('outputs the correct string', () => {
-//   expect(hello()).toBe("Hello world!");
-// });
+const isPrime = require('./../../isPrime');
 
 test('Is it prime ?', () => {
   expect(isPrime(2)).toBe('2 IS A PRIME')

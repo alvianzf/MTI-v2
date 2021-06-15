@@ -1,4 +1,4 @@
-const whatTimeIsIt = require('./whatTimeIsIt');
+const whatTimeIsIt = require('./../../whatTimeIsIt');
 
 test('what time is it?', () => {
   expect(whatTimeIsIt("12:00 pm")).toBe("It's noon");

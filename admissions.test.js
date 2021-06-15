@@ -17,5 +17,5 @@ test('Is 21 prime ?', () => {
 })
 test('Is 389 prime ?', () => {
   expect(isPrime(389)).toBe('389 IS A PRIME')
-  expect(isPrime(973)).toBe('973 IS NOT A PRIME')
+  expect(isPrime(973)).toBe('973 IS A PRIME')
 })

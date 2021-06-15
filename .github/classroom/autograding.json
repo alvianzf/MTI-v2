@@ -3,7 +3,7 @@
     {
       "name": "is it prime",
       "setup": "npm install",
-      "run": "npm test isItPrime.test.js",
+      "run": "npm test tests/isItPrime.test.js",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,17 @@
     {
       "name": "whatTimeIsIt",
       "setup": "npm install",
-      "run": "npm test whatTimeIsIt.test.js",
+      "run": "npm test tests/whatTimeIsIt.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "whenWasItPosted",
+      "setup": "npm install",
+      "run": "npm test tests/whenWasItPosted.test.js",
       "input": "",
       "output": "",
       "comparison": "included",

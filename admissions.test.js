@@ -5,17 +5,15 @@ const isPrime = require('./isPrime');
 //   expect(hello()).toBe("Hello world!");
 // });
 
-test('Is 2 prime ?', () => {
+test('Is it prime ?', () => {
+  console.log("2")
   expect(isPrime(2)).toBe('2 IS A PRIME')
-})
-
-test('Is 283 prime ?', () => {
-  expect(isPrime(283)).toBe('283 IS A PRIME')
-})
-test('Is 21 prime ?', () => {
-  expect(isPrime(21)).toBe('21 IS NOT A PRIME')
-})
-test('Is 389 prime ?', () => {
+  console.log("389")
   expect(isPrime(389)).toBe('389 IS A PRIME')
-  expect(isPrime(973)).toBe('973 IS A PRIME')
+  console.log("973")
+  expect(isPrime(973)).toBe('973 IS NOT A PRIME')
+  console.log("283")
+  expect(isPrime(283)).toBe('283 IS A PRIME')
+  console.log("21")
+  expect(isPrime(21)).toBe('21 IS NOT A PRIME')
 })

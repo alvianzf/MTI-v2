@@ -11,6 +11,9 @@ jobs:
       - uses: education/autograding@v1
         id: autograder
         continue-on-error: true
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
 
       - id: "append_points"
         uses: jroehl/gsheet.action@v1.1.0

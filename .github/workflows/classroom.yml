@@ -13,19 +13,9 @@ jobs:
         continue-on-error: true
       - name: Get current date
         id: date
-        uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "Asia/Indonesia"
-          timezoneMacos: "Asia/Indonesia"
-          timezoneWindows: "Indonesia Standard Time"
         run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
       - name: Get current time
         id: time
-        uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "Asia/Indonesia"
-          timezoneMacos: "Asia/Indonesia"
-          timezoneWindows: "Indonesia Standard Time"
         run: echo "::set-output name=time::$(date +'%H:%M:%S')"
 
       - id: "append_points"

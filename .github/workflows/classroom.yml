@@ -27,7 +27,7 @@ jobs:
                     "${{ github.actor }}", 
                     "${{ github.repository }}", 
                     "${{ steps.autograder.outputs.Points }}",
-                    "=NOW()"
+                    "${{ steps.date.outputs.date }}"
                   ]] 
                 }
               }

@@ -1,9 +1,19 @@
 {
   "tests": [
     {
-      "name": "Testing",
+      "name": "is it prime",
       "setup": "npm install",
-      "run": "npm test",
+      "run": "npm test isItPrime.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "whatTimeIsIt",
+      "setup": "npm install",
+      "run": "npm test whatTimeIsIt.test.js",
       "input": "",
       "output": "",
       "comparison": "included",

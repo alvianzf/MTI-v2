@@ -34,7 +34,7 @@ jobs:
                     "${{ github.repository }}", 
                     "${{ steps.autograder.outputs.Points }}",
                     "${{ steps.date.outputs.date }}",
-                    "${{ steps.date.outputs.time }}"
+                    "${{ steps.time.outputs.time }}"
                   ]] 
                 }
               }

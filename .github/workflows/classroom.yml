@@ -1,0 +1,40 @@
+name: GitHub Classroom Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: education/autograding@v1
+        id: autograder
+        continue-on-error: true
+
+      - id: "append_points"
+        uses: jroehl/gsheet.action@v1.1.0
+        with:
+          spreadsheetId: 1HFims7REJXElNhGxVP8ta6KQr8mUFliA_ug57Ob9D48
+          commands: |
+            [
+              { 
+                "command": "appendData", 
+                "args": { 
+                  "worksheetTitle": "grades",
+                  "minCol": 1, 
+                  "data": [[
+                    "${{ github.actor }}", 
+                    "${{ github.repository }}", 
+                    "${{ steps.autograder.outputs.Points }}"
+                  ]] 
+                }
+              }
+            ]
+        env:
+          GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
+          GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
+      - name: Results
+        env:
+          RESULTS: ${{ steps.append_points.outputs.results }}
+        run: echo "$RESULTS" | jq

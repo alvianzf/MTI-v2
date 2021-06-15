@@ -13,7 +13,10 @@ jobs:
         continue-on-error: true
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%d-%m-%Y %H:%M:%S')"
+        run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
+      - name: Get current time
+        id: time
+        run: echo "::set-output name=date::$(date +'%H:%M:%S')"
 
       - id: "append_points"
         uses: jroehl/gsheet.action@v1.1.0
@@ -30,7 +33,8 @@ jobs:
                     "${{ github.actor }}", 
                     "${{ github.repository }}", 
                     "${{ steps.autograder.outputs.Points }}",
-                    "${{ steps.date.outputs.date }}"
+                    "${{ steps.date.outputs.date }}",
+                    "${{ steps.date.outputs.time }}"
                   ]] 
                 }
               }

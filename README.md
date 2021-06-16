@@ -10,7 +10,10 @@ Setup command
 Run command
 >npm test
 
+Please make sure you test the code with `npm test` before you push it onto the repository.
+
 ## Notes
 
-You have **4** problems to complete: `isItPrime`, `whatTimeIsIt`, `whenWasItPosted`, and `whoIsIt`. Each problem set has its own instructions. Read them carefuly!.  
-Do not alter the contents of `.github` folder!
+You have **4** problems to complete: `isPrime`, `whatTimeIsIt`, `whenWasItPosted`, and `whoIsIt`. Each problem set has its own instructions. Read them carefuly!.  
+  
+Do not alter the contents of `.github` folder!  

@@ -33,7 +33,7 @@
     {
       "name": "Who is It",
       "setup": "npm install",
-      "run": "npm test tests/whoIstIt.test.js",
+      "run": "npm test tests/whoIsIt.test.js",
       "input": "",
       "output": "",
       "comparison": "included",
